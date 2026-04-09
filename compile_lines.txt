@@ -1,0 +1,2 @@
+Vulnerable : gcc -o iot_console iot_console.c -no-pie -fno-stack-protector -g -O0
+Hardened : gcc -o iot_console_hardened iot_console.c -fstack-protector-all -D_FORTIFY_SOURCE=2 -pie -fPIE -Wformat -Wformat-security -O2
